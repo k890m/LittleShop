@@ -21,18 +21,27 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="nav-branding">comfy notions</a>
-        <form>
-          <div class="search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input type="search" class="search-input" placeholder="Search" />
-          </div>
-        </form>
-        
-        <img src="./assets/Profile.png" alt="profile icon"/>
-        <img src="./assets/heart.png" alt="favorites icon"/>
-        <img src="./assets/Cart.png" alt="cart icon"/>
-
+        <div class="nav-left">
+          <a href="#" class="nav-branding">comfy notions</a>
+          <form>
+            <div class="search">
+              <span class="search-icon material-symbols-outlined">search</span>
+              <input type="search" class="search-input" placeholder="Search" />
+            </div>
+          </form>
+        </div>
+        <div class="nav-icons">
+          <img src="./assets/Profile.png" alt="profile icon"/>
+          <img src="./assets/heart.png" alt="favorites icon"/>
+          <img src="./assets/Cart.png" alt="cart icon"/>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="nav-menu-container">
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="nav-link">New Arrivals</a>
@@ -53,13 +62,7 @@
             <a href="#" class="nav-link">Clay Products</a>
           </li>
         </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+      </div>
       <div class="items-carousel">
         <div class="item-slide">
           <img src="./assets/sparkle.png" />
@@ -73,6 +76,7 @@
           var copy = document.querySelector(".item-slide").cloneNode(true);
           document.querySelector(".items-carousel").appendChild(copy);
         </script>
+      </div>
     </header>
   </body>
 </html>
