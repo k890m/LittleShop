@@ -96,6 +96,9 @@ a {
   overflow: hidden;
   padding: 15px 0;
   white-space: nowrap;
+  border-bottom: #f9a7a7;
+  border-bottom-style: solid;
+
 }
 
 .items-carousel:hover .item-slide{
@@ -104,7 +107,7 @@ a {
 
 .item-slide {
   display: inline-block;
-  animation: 15s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 .item-slide img{
