@@ -52,6 +52,7 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  font-family: Alatsi;
 }
 
 .nav-branding {
@@ -93,7 +94,7 @@ a {
   padding: 7px;
   border-radius: 6.25rem;
   background-color: #F3ECDA;
-  margin-left: auto; 
+  float: right; 
 }
 
 .search-input {
