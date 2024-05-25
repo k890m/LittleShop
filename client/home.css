@@ -38,6 +38,13 @@ a {
   gap: 16px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 16px; 
+}
+
 .nav-menu-container {
   width: 85%; 
   margin: 0 auto;
@@ -88,13 +95,11 @@ a {
 }
 
 .search {
-  width: max-content;
-  align-items: center;
   display: flex;
+  align-items: center;
   padding: 7px;
   border-radius: 6.25rem;
   background-color: #F3ECDA;
-  float: right; 
 }
 
 .search-input {
@@ -150,8 +155,8 @@ a {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(-3) {
-    transform: translateY(-8px) rotate(45deg);
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-menu {
