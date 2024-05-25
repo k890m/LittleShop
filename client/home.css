@@ -175,3 +175,21 @@ a {
     left: 0;
   }
 }
+
+
+.mainpage-slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mainpage-slider img{
+  width: 100%;
+  display: none;
+}
+
+
+img.displaySlide{
+  display: block;
+}

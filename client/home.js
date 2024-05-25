@@ -10,3 +10,25 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+//IMAGE SLIDER
+
+const slides = document.querySelector(".slides img");
+let slideIndex = 0;
+let intervalId = null;
+
+function initializeSlider(){
+  slides[slideIndex].classList.add("displaySlide")
+}
+
+function showSlider(index){
+  
+}
+
+function prevSlide(index){
+  
+}
+
+function nextSlide(index){
+  
+}
