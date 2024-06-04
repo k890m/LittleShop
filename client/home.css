@@ -391,3 +391,10 @@ h1.featured {
   font-size: 24px;
   cursor: pointer;
 }
+
+
+.cart-total {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}

@@ -98,6 +98,12 @@ function setupCartIcon() {
   });
 }
 
+// Calculate the total price of the items in the cart
+function calculateCartTotal() {
+  return cart.reduce((total, item) => total + (parseFloat(item.price.replace('$', '')) * item.quantity), 0).toFixed(2);
+}
+
+// Update displayCartContents function to include the cart total
 function displayCartContents() {
   let cartContents = 'Your cart is empty.';
   if (cart.length > 0) {
@@ -106,6 +112,8 @@ function displayCartContents() {
       cartContents += `<li>${item.name} - ${item.price} (Quantity: ${item.quantity})</li>`;
     });
     cartContents += '</ul>';
+    const cartTotal = calculateCartTotal();
+    cartContents += `<p class="cart-total">Total: $${cartTotal}</p>`;
   }
 
   const cartModal = document.createElement('div');
