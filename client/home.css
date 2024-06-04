@@ -222,13 +222,17 @@ h1.featured {
   padding-top: 10px;
 }
 
+.featured-section{
+  background-color: #f3ecda;
+  padding-bottom: 20px;
+}
 
 .featured-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20pxpx;
-  margin: 20px 0;
+  gap: 20px;
+  
 }
 
 .item {
@@ -287,6 +291,7 @@ h1.featured {
   border-radius: 4px;
 }
 
+
 .item-image:hover .add-to-cart {
   display: block;
 }
@@ -294,6 +299,7 @@ h1.featured {
 .item-details {
   padding: 16px;
   text-align: center;
+  background-color: rgb(242, 243, 237);
 }
 
 .item-name {
@@ -397,4 +403,33 @@ h1.featured {
   font-weight: bold;
   margin-top: 20px;
   text-align: center;
+}
+
+/*Footer */
+.footer {
+  background-color:#5c7946;
+  color: #f3ecda;
+  text-align: center;
+  height: 150px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .contact {
+  font-size: 1.2rem;
+  font-family: Alatsi;
+  margin-right: 10px; 
+}
+
+.footer .icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer .icon:hover {
+  opacity: 0.8;
 }
