@@ -9,16 +9,17 @@ const { GrantType, KindeClient } = require('@kinde-oss/kinde-nodejs-sdk');
 const { isAuthenticated } = require('./middlewares/isAuthenticated');
 
 const app = express();
-const port = 5500;
+const port = 3000;
 const options = {
   domain: process.env.KINDE_DOMAIN,
   clientId: process.env.KINDE_CLIENT_ID,
   clientSecret: process.env.KINDE_CLIENT_SECRET,
   redirectUri: process.env.KINDE_REDIRECT_URI,
-  postLoginRedirectUri: process.env.KINDE_POST_LOGIN_REDIRECT_URI || '',
-  logoutRedirectUri: process.env.KINDE_LOGOUT_REDIRECT_URI || '',
+  postLoginRedirectUri: process.env.KINDE_POST_LOGIN_REDIRECT_URI || 'http://localhost:3000/',
+  logoutRedirectUri: process.env.KINDE_LOGOUT_REDIRECT_URI || 'http://localhost:3000/',
   grantType: GrantType.PKCE,
 };
+
 const kindeClient = new KindeClient(options);
 
 app.use(express.static('client'));
